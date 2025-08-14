@@ -1,0 +1,28 @@
+# My Portfolio (React)
+
+This is a Create React App scaffold for a personal website (Home, Portfolio, Blog, Contact). It's configured to auto-deploy to GitHub Pages using GitHub Actions.
+
+Before you push:
+- Replace homepage in package.json with your GitHub pages URL:
+  "homepage": "https://<GITHUB_USERNAME>.github.io/<REPO_NAME>"
+
+How to publish
+1. Create a repository on GitHub (or use gh CLI).
+2. Locally:
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/<GITHUB_USERNAME>/<REPO_NAME>.git
+   git push -u origin main
+
+3. The GitHub Actions workflow (.github/workflows/deploy.yml) will run on push to `main`, build the app, and deploy the `build` folder to GitHub Pages automatically.
+
+Notes
+- If you prefer Vercel (recommended for React apps), skip the homepage change — just push the repo to GitHub and import on Vercel. Vercel will auto-deploy on each push.
+- To use the contact form, replace the Formspree action URL with your Formspree endpoint or your own backend.
+- Add images in public/images/ and update data/projects.js accordingly.
+
+If you want, I can:
+- Create a ready-to-import GitHub repo (you'll still have to push it under your account)
+- Convert the workflow to deploy to Netlify or Vercel
