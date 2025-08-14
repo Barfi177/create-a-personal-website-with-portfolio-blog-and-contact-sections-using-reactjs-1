@@ -1,0 +1,29 @@
+export const posts = [
+  {
+    slug: 'hello-world',
+    title: 'Hello World',
+    date: '2025-08-01',
+    content: `# Hello World
+
+This is my first blog post written in Markdown.
+
+- Built with React
+- Lightweight blog system
+
+Write more posts by adding objects in src/data/posts.js.
+`
+  },
+  {
+    slug: 'my-second-post',
+    title: 'My Second Post',
+    date: '2025-08-05',
+    content: `## Second post
+
+A short note about a project or a tutorial you wrote. You can include code blocks:
+
+\`\`\`js
+console.log('hello');
+\`\`\`
+`
+  }
+];
